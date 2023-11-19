@@ -26,7 +26,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: filipelinsme
 github_username:  filipemlins
 
-theme: bulma-clean-theme
+# theme: bulma-clean-theme
 
 # Build settings
 remote_theme: chrisrhymes/bulma-clean-theme
