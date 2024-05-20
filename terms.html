@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Apps Factory </title>
     <style>
-        .content{
-            flex: 1; /* Grow to fill remaining vertical space */
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-        }
-        /* General Styles */
-        body {
+        html, body {
             font-family: 'Arial', sans-serif;
             color: #333;
             background-color: #f9f9f9;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            min-height: 100vh; /* Set body height to full viewport height */
+            display: flex; /* Use flexbox to align children */
+            flex-direction: column; /* Stack children vertically */
+        }
+
+                /* Main Content Styles */
+        .container {
+            flex: 1; /* Grow to fill remaining vertical space */
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         /* Navigation Styles */
@@ -53,15 +56,6 @@
             color: #2ecc71;
         }
 
-        /* Main Content Styles */
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
 
         h1, h2 {
             color: #3498db;
@@ -129,15 +123,15 @@
 <nav class="navbar">
     <div>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/chromatic-harmonica.html">Products</a></li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
         </ul>
     </div>
 </nav>
 
-<div class="content">
+<div class="container">
 <h1> Chromatic Harmonica Mobile App Terms and Conditions</h1>
 
 <p>These Terms and Conditions ("<strong>Terms</strong>") govern your use of <strong>Chromatic Harmonica</strong> ("<strong>App</strong>"), developed by <strong>Music Apps Factory</strong> ("<strong>Developer</strong>"). By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the App.</p>
@@ -173,7 +167,7 @@
     <li><strong>Refunds</strong>: All purchases are final and non-refundable, except as required by applicable law.</li>
 </ol>
 
-<h2>🛡️ Disclaimer</h2>
+<h2> Disclaimer</h2>
 <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. THE DEVELOPER DOES NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR COMPLETELY SECURE.</p>
 
 <h2> Limitation of Liability</h2>
@@ -192,19 +186,20 @@
 </div>
 </body>
 
- <footer class="footer">
-            <div class="footer-content">
-                <nav>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/chromatic-harmonica.html">Products</a></li>
-                        <li><a href="/">About Us</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <p>&copy; 2024 Music Apps Factory</p>
-            </div>
-        </footer>
+  <footer class="footer">
+        <div class="footer-content">
+            <nav>
+                <ul>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                    <li><a href="/exclude-account">Exclude Account</a></li>
+
+                </ul>
+            </nav>
+            <p>&copy; 2024 Music Apps Factory</p>
+        </div>
+    </footer>
         
         <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts -->
 </html>

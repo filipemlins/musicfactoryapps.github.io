@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Apps Factory </title>
     <style>
-        .content{
-            margin-left: 24px;
-        }
-          /* General Styles */
-        body {
+        html, body {
             font-family: 'Arial', sans-serif;
             color: #333;
             background-color: #f9f9f9;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            min-height: 100vh; /* Set body height to full viewport height */
+            display: flex; /* Use flexbox to align children */
+            flex-direction: column; /* Stack children vertically */
+        }
+
+                /* Main Content Styles */
+        .container {
+            flex: 1; /* Grow to fill remaining vertical space */
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         /* Navigation Styles */
@@ -48,15 +56,6 @@
             color: #2ecc71;
         }
 
-        /* Main Content Styles */
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
 
         h1, h2 {
             color: #3498db;
@@ -120,24 +119,18 @@
     </style>
 </head>
 <body>
-    <nav class="navbar is-primary" x-data="{ openNav: false }">
-        <div>
-            <nav class="navbar">
-                <div>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/chromatic-harmonica.html">Products</a></li>
-                        <li><a href="/">About Us</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-                    <!-- Add any additional navigation items here -->
-                </div>
-            </div>
-        </div>
-    </nav>
-                    <div class="content">
+<nav class="navbar">
+    <div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/chromatic-harmonica.html">Products</a></li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+                    <div class="container">
                                 <h1 id="contact-us">Exclude Your Account</h1>
                                 <p>If you wish to exclude your account from our platform, please contact us through the following email address:</p>
                                 <p><strong>Email Us:</strong> <a href="mailto:contact@musicappsfactory.com">contact@musicappsfactory.com</a></p>
