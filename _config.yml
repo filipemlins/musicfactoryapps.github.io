@@ -26,7 +26,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: filipelinsme
 github_username:  filipemlins
 
-# theme: bulma-clean-theme
+theme: bulma-clean-theme
 
 # Build settings
 remote_theme: chrisrhymes/bulma-clean-theme
@@ -42,6 +42,14 @@ navbar_items:
     url: /chromatic-harmonica
   - name: Contact
     url: /contact
+  - name: About
+    url: /about
+  - name: Privacy Policy
+    url: /privacy-policy
+  - name: Terms of Service
+    url: /terms-of-service
+  - name: Exclude Account
+    url: /exclude-account
 
 footer_social_links:
   - name: twitter
