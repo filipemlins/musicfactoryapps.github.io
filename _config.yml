@@ -29,10 +29,10 @@ github_username:  filipemlins
 # theme: bulma-clean-theme
 
 # Build settings
-remote_theme: chrisrhymes/bulma-clean-theme
-markdown: kramdown
-plugins:
-  - jekyll-feed
+# remote_theme: chrisrhymes/bulma-clean-theme
+# markdown: kramdown
+# plugins:
+#   - jekyll-feed
 
 # Bulma Clean Theme specific
 navbar_items:
