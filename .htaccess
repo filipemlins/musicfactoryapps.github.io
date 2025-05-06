@@ -1,0 +1,5 @@
+<script type="text/javascript">
+  if (window.location.hostname === 'yoursite.github.io') {
+    window.location.href = 'https://www.yoursite.github.io' + window.location.pathname;
+  }
+</script>
