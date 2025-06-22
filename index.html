@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Apps Factory </title>
-    <style>
+    <title>Music Apps Factory</title>
 
+    <!-- Smart App Banner for iOS -->
+    <meta name="apple-itunes-app" content="app-id=6503302261">
+
+    <style>
         /* General Styles */
         html, body {
             font-family: 'Arial', sans-serif;
@@ -14,21 +17,19 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            min-height: 100vh; /* Set body height to full viewport height */
-            display: flex; /* Use flexbox to align children */
-            flex-direction: column; /* Stack children vertically */
+            min-height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
         }
 
-                /* Main Content Styles */
+        /* Main Content Styles */
         .container {
-            flex: 1; /* Grow to fill remaining vertical space */
+            flex: 1;
             padding: 20px;
             background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-
 
         /* Navigation Styles */
         nav {
@@ -121,7 +122,12 @@
     </style>
 </head>
 <body>
-
+<div id="app-banner">
+    Download Chromatic Harmonica PRO
+    <a href="https://apps.apple.com/app/id6503302261">App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.musicapps.chromaticharmonica">Google Play</a>
+    <span class="close-btn" onclick="document.getElementById('app-banner').style.display='none';">✖</span>
+</div>
 <nav class="navbar">
     <div>
         <ul>
@@ -151,14 +157,13 @@
 <footer class="footer">
     <div class="footer-content">
         <nav>
-                    <ul>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/privacy">Privacy Policy</a></li>
-                    <li><a href="/terms">Terms of Service</a></li>
-                    <li><a href="/exclude-account">Exclude Account</a></li>
-                    <li><a href="/eula">EULA</a></li>
-                    </ul>
-
+            <ul>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms of Service</a></li>
+                <li><a href="/exclude-account">Exclude Account</a></li>
+                <li><a href="/eula">EULA</a></li>
+            </ul>
         </nav>
         <p>&copy; 2024 Music Apps Factory</p>
     </div>
